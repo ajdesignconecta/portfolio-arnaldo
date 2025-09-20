@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portfólio – Sites que vendem</title>
+  <meta name="description" content="Meu portfólio - Sites que vendem. Projetos reais com foco em UI/UX, performance e conversão.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toggle Claro/Escuro -->
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro">
+    <span class="theme-dot" aria-hidden="true"></span>
+    <span class="theme-label">Tema</span>
+  </button>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Meu <span>portfólio</span></h1>
+        <p>Projetos reais com foco em UI/UX, performance e conversão.<br>
+        Clique em <strong>Desktop</strong> ou <strong>Celular</strong> para ver cada projeto em tela cheia.</p>
+        <button class="btn" onclick="scrollToProjects()">Explorar Projetos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-buttons" id="filterButtons"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Créditos -->
+  <section class="credits">
+    <div class="container">
+      <p><strong>Programador responsável:</strong> Arnaldo Gomes de Souza Junior</p>
+      <p><a class="btn" href="../../index.html">← Voltar ao início</a></p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div style="text-align:center;">
+        <h3 id="modalTitle"></h3>
+        <img id="modalImage" class="modal-image" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
